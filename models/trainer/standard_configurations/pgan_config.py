@@ -6,7 +6,7 @@ _C = BaseConfig()
 
 # Maximum number of iteration at each scale
 _C.maxIterAtScale = [48000, 96000, 96000,
-                     96000, 96000, 96000, 96000, 96000, 200000]
+                     96000, 200000, 96000, 96000, 96000, 200000]
 
 # Blending mode.
 
@@ -75,7 +75,7 @@ _C.miniBatchStdDev = True
 _C.baseLearningRate = 0.001
 
 # RGB or grey level output ?
-_C.dimOutput = 3
+_C.dimOutput = 1
 
 # In case of AC GAN, weight on the classification loss (per scale)
 _C.weightConditionG = 0.0
